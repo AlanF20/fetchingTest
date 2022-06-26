@@ -1,25 +1,18 @@
-let contador = 1;
+import getAPIData from "./helpers/getAPIData.js"
+import Header from "./components/Header.js";
 
-const getData = async () =>{
-    try{
-        const API = `https://rickandmortyapi.com/api/character/${contador}`;
-        const response = await fetch(API);
-        const data = response.json();
-        contador++;
-        return data;
-    }catch(error){
-        return console.log(error)
-    }
-};
+const d = document;
+d.addEventListener("DOMContentLoaded", Header);
 
 document.querySelector("button").addEventListener("click", async () =>{
     const article = document.createElement("article");
     const name = document.createElement("h2");
     const image = document.createElement("img");
-    const character = await getData();
+    const character = await getAPIData();
     name.innerHTML = character.name;
     image.src = character.image;
     article.appendChild(image);
     article.appendChild(name);
     const container = document.querySelector(".character").appendChild(article)
+    return container;
 })
