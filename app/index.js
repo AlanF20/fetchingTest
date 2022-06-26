@@ -1,18 +1,10 @@
-import getAPIData from "./helpers/getAPIData.js"
-import Header from "./components/Header.js";
+import Header from "./components/Header.js"
+import Character from "./components/Character.js";
 
-const d = document;
-d.addEventListener("DOMContentLoaded", Header);
+document.body.insertAdjacentElement("afterbegin",Header())
 
-document.querySelector("button").addEventListener("click", async () =>{
-    const article = document.createElement("article");
-    const name = document.createElement("h2");
-    const image = document.createElement("img");
-    const character = await getAPIData();
-    name.innerHTML = character.name;
-    image.src = character.image;
-    article.appendChild(image);
-    article.appendChild(name);
-    const container = document.querySelector(".character").appendChild(article)
+document.querySelector("button").addEventListener("click",async () =>{
+    const container = document.querySelector(".character");
+    container.appendChild(await Character());
     return container;
 })
