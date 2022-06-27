@@ -6,8 +6,8 @@ const Header = () => {
             <p>F<span>🔥</span>s  lore</p>
         </div>
         <ul class="header__nav-ul">
-            <li class="header__nav-ul-li"><i class='bx bx-info-circle'></i></li>
-            <li class="header__nav-ul-li"><i class='bx bx-moon'></i></li>
+            <li class="header__nav-ul-li"><a href="#"><i class='bx bx-info-circle infoModal'></i></a></li>
+            <li class="header__nav-ul-li"><a href="#"><i class='bx bx-moon'></i></a></li>
         </ul>
     </nav>
     `;
