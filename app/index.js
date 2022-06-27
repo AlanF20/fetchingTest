@@ -9,8 +9,12 @@ document.querySelector("button").addEventListener("click",async () =>{
 
 
 const infoModal = document.querySelector(".infoModal");
-const modal = document.querySelector("dialog");
+const modal = document.querySelector(".modal");
 const closeModal = document.querySelector(".modal__close");
+
+const darkMode = document.querySelector(".darkMode");
+const modal2 = document.querySelector(".modal2");
+const closeModal2 = document.querySelector(".modal__close2");
 
 infoModal.addEventListener("click", ()=>{
     modal.style.display = "flex";
@@ -19,4 +23,13 @@ infoModal.addEventListener("click", ()=>{
 closeModal.addEventListener("click",()=>{
     modal.close();
     modal.style.display = "none";
+})
+
+darkMode.addEventListener("click", ()=>{
+    modal2.style.display = "flex";
+    modal2.showModal();
+})
+closeModal2.addEventListener("click", ()=>{
+    modal2.close();
+    modal2.style.display = "none";
 })
