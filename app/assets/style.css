@@ -102,7 +102,8 @@ body {
   gap: 20px;
   justify-content: center;
 }
-.modal {
+.modal,
+.modal2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -114,11 +115,13 @@ body {
   margin: auto;
   border-radius: 20px;
 }
-.modal::backdrop {
+.modal::backdrop,
+.modal2::backdrop {
   background: #0001;
   backdrop-filter: blur(2px);
 }
-.modal__close {
+.modal__close,
+.modal__close2 {
   padding: 10px;
   font-weight: bold;
   border: none;
