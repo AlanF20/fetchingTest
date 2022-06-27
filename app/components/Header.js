@@ -7,7 +7,7 @@ const Header = () => {
         </div>
         <ul class="header__nav-ul">
             <li class="header__nav-ul-li"><a href="#"><i class='bx bx-info-circle infoModal'></i></a></li>
-            <li class="header__nav-ul-li"><a href="#"><i class='bx bx-moon'></i></a></li>
+            <li class="header__nav-ul-li"><a href="#"><i class='bx bx-moon darkMode'></i></a></li>
         </ul>
     </nav>
     `;
