@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+
 .add {
   align-self: flex-end;
   position: fixed;
@@ -64,7 +65,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.bx-sun{
+  display: none;
+}
 .header__nav-logo {
   width: 70%;
   display: flex;
@@ -104,12 +107,13 @@ body {
 }
 .modal,
 .modal2 {
+  
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   gap: 10px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   border: none;
   position: fixed;
   margin: auto;
