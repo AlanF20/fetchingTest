@@ -149,3 +149,9 @@ body {
   );
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#87F4B5", endColorstr="#93CBF1", GradientType=1 );
 }
+article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
