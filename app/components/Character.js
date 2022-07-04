@@ -1,5 +1,4 @@
 import getAPIData from "../helpers/getAPIData.js";
-import Loader from "./Loader.js";
 
 const Character = async () => {
   const $article = document.createElement("article");
